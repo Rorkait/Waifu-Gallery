@@ -308,4 +308,18 @@ footer{
 
 
 }
+@media only screen and (max-width: 340px){
+    header{
+        text-align: center;
+        /* margin-left: ; */
+        font-size: .8rem;
+    }
+    header li{
+        margin-right: 0;
+        width: 240px;
+    }
+    #section-characters h1{
+        font-size: 1.3rem;
+    } 
+}
 
