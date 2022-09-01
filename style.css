@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
+:root{
+    --pink-gradient: linear-gradient(to left, rgba(157, 24, 228, 0.823), rgba(189, 104, 204, 0.663),rgba(157, 24, 228, 0.823));
+}
 
 *{
     padding: 0;
@@ -10,6 +13,8 @@
 
 
 
+/* Header */
+
 header{
     opacity: 0.8;
     font-size: 1.2rem;
@@ -19,7 +24,7 @@ header{
     padding: 25px;
     font-weight: bold;
     color: rgb(230, 205, 244);
-    background-image: linear-gradient(to left, rgba(157, 24, 228, 0.823), rgba(189, 104, 204, 0.663),rgba(157, 24, 228, 0.823));
+    background-image: var(--pink-gradient);
     
 }
 header h1{
@@ -64,9 +69,11 @@ header li:hover{
 
 }
 
+/* main banner */
+
 #main-banner{
     padding: 10px;
-    background-image: linear-gradient(to left, rgba(157, 24, 228, 0.823), rgba(189, 104, 204, 0.663),rgba(157, 24, 228, 0.823));
+    background-image: var(--pink-gradient);
     box-shadow: 5px 5px 21px 10px rgb(183, 69, 236);
 
 }
@@ -100,6 +107,9 @@ header li:hover{
     border-radius: 5px;
  }
 
+
+/* Section Characters */
+
 #section-characters{
     color: rgb(245, 245, 235);
     text-shadow: 3px 3px 25px rgba(206, 5, 206, 0.907);
@@ -111,7 +121,7 @@ header li:hover{
     padding-top: 30px;
     text-align: center;
     width: 100%;
-    background-image: linear-gradient(to left, rgba(157, 24, 228, 0.823), rgba(189, 104, 204, 0.663),rgba(157, 24, 228, 0.823));
+    background-image: var(--pink-gradient);
     box-shadow: 5px 5px 21px 10px rgb(183, 69, 236);
 }
 section img{
@@ -153,12 +163,15 @@ section img{
     color: rgb(238, 227, 227);
     box-shadow: 6px 6px 6px 2px rgba(180, 9, 242, 0.377);
 }
+
+/* footer */
+
 footer{
     width: 100%;
     padding: 30px;
     color: rgb(227, 219, 233);
     text-align: center;
-    background-image: linear-gradient(to left, rgba(157, 24, 228, 0.823), rgba(189, 104, 204, 0.663),rgba(157, 24, 228, 0.823));
+    background-image: var(--pink-gradient);
     font-weight: bold;
     font-size: 1.2rem;
     opacity: 0.8;
@@ -187,6 +200,8 @@ footer{
     top:5%;
     width: 80vw;
 }
+
+/* reponsivity */
 
 @media only screen and (max-width: 1238px){
     #content-banner{
@@ -304,10 +319,8 @@ footer{
         top:35%;
         width: 100vw;
     }
-
-
-
 }
+
 @media only screen and (max-width: 340px){
     header{
         text-align: center;
