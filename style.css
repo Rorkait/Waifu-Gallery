@@ -1,36 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/* Lobster Two */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+/* Changa */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
 
-:root{
+/* :root{
     --pink-gradient: linear-gradient(to left, rgba(157, 24, 228, 0.823), rgba(189, 104, 204, 0.663),rgba(157, 24, 228, 0.823));
+} */
+
+/* variables */
+:root{
+    --gray:rgba(220, 212, 212, 0.752);
+    --white: rgb(242, 231, 231);
+
+    --titleFont: "Lobster Two", Helvetica, sans-serif;
+    --textFont: "Changa", Helvetica, sans-serif;
+
+    --titleShadow:5px 5px 10px  rgb(2, 0, 5);
+
+    --cardShadow:0px 0px 20px 10px #5110ba;
+    --imgShadow: 0px 0px 20px 10px #5110ba;
+
+    --headerOpacity:rgba(46, 44, 44, 0.442);
+    --contentOpacity: rgba(108, 34, 182, 0.442);
+
+    --textSize: 1.3rem;
+    --titleSize: 1.5rem;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Libre Baskerville", Helvetica, sans-serif;
 }
 
-
+#container{
+    background-image: url("./images/purple-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* Header */
 
 header{
+    font-family: var(--titleFont);
     opacity: 0.8;
-    font-size: 1.2rem;
+    font-size: var(--titleSize);
     width: 100%;
     height: 100px;
-    /* text-align: center; */
     padding: 25px;
     font-weight: bold;
-    color: rgb(230, 205, 244);
-    background-image: var(--pink-gradient);
+    color: var(--white);
+    background-color: var(--headerOpacity);
+
     
 }
 header h1{
     display: inline-block;
     margin-left: 10%;
-    text-shadow: 3px 3px 25px rgba(206, 5, 206, 0.907);
+    text-shadow: var(--titleShadow);
 }
 
 header ul{
@@ -40,27 +68,27 @@ header ul{
 }
 header a{
     text-decoration: none;
-    color: rgb(230, 205, 244);
-    text-shadow: 3px 3px 25px rgba(206, 5, 206, 0.907);
+    color: var(--white);
+    text-shadow: var(--titleShadow);
 }
 header li{
     opacity: 0.9;
     text-align: center;
     padding: 15px;
-    color: rgba(157, 24, 228, 0.823);
+    /* color: rgba(157, 24, 228, 0.823); */
     margin-right: 10px;
     display: inline-block;
     cursor: pointer;
     border-radius: 5px;
 }
 .li1:hover{
-    background-color: rgba(189, 104, 204, 0.663);
+    background-color: #1d0f35;
 }
 .li2:hover{
-    background-color: rgba(169, 82, 216, 0.823);
+    background-color: #1d0f35;
 }
 .li3:hover{
-    background-color: rgba(163, 51, 223, 0.758);
+    background-color: #1d0f35;
 }
 
 header li:hover{
@@ -72,30 +100,33 @@ header li:hover{
 /* main banner */
 
 #main-banner{
-    padding: 10px;
-    background-image: var(--pink-gradient);
-    box-shadow: 5px 5px 21px 10px rgb(183, 69, 236);
+    padding: 20px;
+    background-color: var(--contentOpacity);
+    box-shadow: var(--cardShadow);
 
 }
 
 #content-banner{
-    color: rgb(245, 245, 235);
+    font-weight: bold;
     text-align: center;
     width: 50%;
     float: right;
-    padding-top: 20px;
 }
 
 #content-banner h1{
-    text-shadow: 3px 3px 25px rgba(206, 5, 206, 0.907);
-    font-size: 1.8em;
+    color: var(--white);
+    font-family: var(--titleFont);
+    text-shadow: var(--titleShadow);
+    font-size: var(--titleSize);
+    margin-bottom: 10px;
 }
 
 #content-banner p{
+    color: var(--gray);
+    font-family: var(--textFont);
     position: absolute;
-    margin-top: 5%;
     width: 45%;
-    font-size: 1.1em;
+    font-size: var(--textSize);
     margin-left: 40px;
 }
 
@@ -111,71 +142,84 @@ header li:hover{
 /* Section Characters */
 
 #section-characters{
-    color: rgb(245, 245, 235);
-    text-shadow: 3px 3px 25px rgba(206, 5, 206, 0.907);
-    font-size: 1.5em;
+    font-family: var(--titleFont);
+    color: var(--white);
+    text-shadow: var(--titleShadow);
+    font-size: var(--titleSize);
+    font-weight: bold;
 }
 
 
 .waifus{
+    background-color: var(--contentOpacity);
     padding-top: 30px;
     text-align: center;
     width: 100%;
-    background-image: var(--pink-gradient);
-    box-shadow: 5px 5px 21px 10px rgb(183, 69, 236);
+    box-shadow: var(--cardShadow);
 }
 section img{
     width: 100%;
 }
 
 .character{
-    margin: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--cardShadow);
+    margin: 20px;
     display: inline-block;
     text-align: center;
-    max-width: 25%;
+    width: 30%;
     font-weight: bold;
 }
 
 .character h2{
     font-weight: bold;
-    font-size: 1.5rem;
-    color: rgb(230, 205, 244);
-    text-shadow: 3px 3px 10px rgba(255, 0, 255, 0.977);
+    font-family: var(--titleFont);
+    font-weight: bold;
+    font-size: var(--titleSize);
+    color: var(--white);
+    text-shadow: var(--titleShadow);
 
 }
 .character p{
+    font-family: var(--textFont);
     text-align: left;
-    color: rgb(241, 232, 232);
-    font-size: 1.1rem;
+    color: var(--gray);
+    font-size: var(--textSize);
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .character button{
-    /* background-image: linear-gradient(to right,rgba(232, 8, 176, 0.998),rgb(213, 52, 189),rgb(213, 52, 189),rgb(219, 2, 165)); */
-    background-image: linear-gradient(to right,rgba(217, 8, 232, 0.742),rgb(205, 70, 232),rgb(205, 70, 232),rgba(217, 8, 232, 0.742));
+    font-family: var(--titleFont);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: var(--titleSize);
     width: 100%;
     padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    color: rgb(238, 227, 227);
-    box-shadow: 6px 6px 6px 2px rgba(180, 9, 242, 0.377);
+    background-color: #2b1750d4;
+    color: var(--white);
+    box-shadow: var(--cardShadow);
+}
+.character button:hover{
+    transition: 0.3s;
+    background-color: #2b17508f;
 }
 
 /* footer */
 
 footer{
+    font-family: var(--titleFont);
     width: 100%;
     padding: 30px;
-    color: rgb(227, 219, 233);
+    color: var(--white);
+    text-shadow: var(--titleShadow);
     text-align: center;
-    background-image: var(--pink-gradient);
+    background-color: var(--headerOpacity);
     font-weight: bold;
-    font-size: 1.2rem;
-    opacity: 0.8;
-    box-shadow: 3px 3px 20px 5px rgb(183, 69, 236);
+    font-size: var(--titleSize);
+    box-shadow: var(--cardShadow);
 }
 .waifus img{
     cursor: pointer;
@@ -203,7 +247,7 @@ footer{
 
 /* reponsivity */
 
-@media only screen and (max-width: 1238px){
+@media only screen and (max-width: 1279px){
     #content-banner{
         float: none;
         text-align: center;
@@ -213,7 +257,7 @@ footer{
     #content-banner p{
         position: static;
         width: 100%;
-        font-size: 1.1em;
+        font-size: var(--textSize);
         margin: 0;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -241,7 +285,7 @@ footer{
         display: inline-block;
     }
     .character{
-        max-width: 40%;
+        width: 45%;
     }
 
 }
@@ -255,7 +299,7 @@ footer{
     #content-banner p{
         position: static;
         width: 100%;
-        font-size: 1.1em;
+        font-size: var(--textSize);
         margin: 0;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -265,11 +309,11 @@ footer{
         width: 100%;
     }
     .character{
-        max-width: 80%;
+        width: 45%;
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 839px){
     header{
         font-size: 1.1rem;
         height: 300px;
@@ -312,7 +356,7 @@ footer{
         width: 100%;
     }
     .character{
-        max-width: 80%;
+        width: 80%;
     }
     #img01{
         position: relative;

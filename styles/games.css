@@ -23,11 +23,12 @@
 
     --cardShadow:0px 0px 20px 10px #5110ba;
     --imgShadow: 0px 0px 20px 10px #5110ba;
+
+    --headerOpacity:rgba(46, 44, 44, 0.442);
+    --contentOpacity: rgba(108, 34, 182, 0.442);
 }
 
 #container{
-    width: 100%;
-    height: 100%;
     background-image: url("../images/purple-background.jpg");
     background-position: center;
     background-size: cover;
