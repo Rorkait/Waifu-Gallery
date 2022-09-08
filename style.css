@@ -183,7 +183,7 @@ section img{
 }
 .character p{
     font-family: var(--textFont);
-    text-align: left;
+    text-align: justify;
     color: var(--gray);
     font-size: var(--textSize);
     margin-top: 15px;

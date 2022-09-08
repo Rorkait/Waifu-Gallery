@@ -103,7 +103,7 @@ section{
 }
 
 .rebirth-content{
-
+    position: relative;
     height: 100%;
     text-align: center;
     float: right;
@@ -122,7 +122,10 @@ section{
 
 }
 .rebirth-content img{
-    margin-top: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
     cursor: pointer;
     width: 200px;
 
@@ -176,6 +179,14 @@ footer{
 }
 
 @media only screen and (max-width:768px){
+
+    .rebirth-content img{
+        position:static;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
     .rebirth{
         height: 100%;
     }
